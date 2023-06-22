@@ -1,0 +1,342 @@
+<? php ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>event managements..</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        
+
+ <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                background-image:url("https://www.brides.com/thmb/mM05rrms1vCKNavAr8UGFNZvHMQ=/3279x3279/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__brides__proteus__5bb64a4ab2e7ef506361bb51__11-57fb9d6a4fbb4a43a0cad00bcc7fb6c9.jpeg"); 
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size:cover ;
+                background-position: center;
+                color: azure;
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+                font-family:Verdana, Geneva, Tahoma, sans-serif; 
+            }
+
+            .bcontainer {
+            margin-right: auto;
+            margin-left: auto;
+            width: 300px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+            height: 420px;
+            border-radius: 5px;
+            backdrop-filter: blur(14px);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            
+        }
+
+        .rcontainer {
+            
+            width: 200px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+            height: 200px;
+            border-radius: 5px;
+            backdrop-filter: blur(14px);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            
+            
+        }
+
+        p{
+          font-size: large;
+        }
+
+        .checked {
+                color: orange;
+                
+                 }
+
+
+
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #1abc9c;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fbb03b;
+}
+
+
+.navbar-custom {
+  background-color: #333333; /* Your custom color */
+  
+}
+        </style>
+    </head>
+    <body>
+      
+        <div>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+              <a class="navbar-brand" href="#"><b><i>Ethereal Events</i></b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.php" >Login & Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="admin.php">Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <br>
+          <br>
+
+          <!--div class="ncontainer">
+           
+            <div class="list">
+              <div class="bcontainer">
+                <h3><b>BASIC PLAN</b></h3>
+                <p> <i class="fa fa-magic"></i> Photography </p>
+              </div>
+            </div> 
+            <br><br>
+
+            <div class="list">
+              <div class="bcontainer">
+                <h3><b>PREMIUM PLAN</b></h3>
+                <p> <i class="fa fa-magic"></i> Photography </p>
+              </div>
+            </div> 
+            <br><br>
+
+            <div class="list">
+              <div class="bcontainer">
+                <h3><b>ULTIMATE PLAN</b></h3>
+                <p> <i class="fa fa-check"></i> Photography </p>
+              </div>
+            </div> 
+          </div-->
+          
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="bcontainer">
+                <h3><b>BASIC PLAN</b></h3>
+                <br>
+                <p> <i>&#127909 Photography </i></p>
+                <p><i>&#127860 Food&emsp;&emsp;&emsp;&emsp;</i></p>
+                <p><i>&#128132 Makeup&emsp;&emsp;&nbsp;&nbsp;</i></p>
+                <p><i>&#9993 Invitations&emsp;</i></p>
+                <p><i>&#128144 Stage Decor&nbsp;</i></p>
+                <br><br><br>
+                <a class="btn btn-secondary" href="login.php" role="button">Book</a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="bcontainer">
+                <h3><b>PREMIUM PLAN</b></h3>
+                <br>
+                <p> <i>&#127909 Photography </i></p>
+                <p><i>&#127860 Food&emsp;&emsp;&emsp;&emsp;</i></p>
+                <p><i>&#128132 Makeup&emsp;&emsp;&nbsp;&nbsp;</i></p>
+                <p><i>&#9993 Invitations&emsp;</i></p>
+                <p><i>&#128144 Stage Decor&nbsp;</i></p>
+                <p><i>&#127926 Music and MC</i></p>
+                <p><i>&#127911 DJ&emsp;&emsp;&emsp;&emsp;&emsp; </i></p>
+                
+                <a class="btn btn-secondary" href="login.php" role="button">Book</a>
+                
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+          <br><br>
+
+          <h1 style=" color:azure;"><b>REVIEWS & RATINGS</b></h1>
+          <br>
+
+          <!--reviews-->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half checked"></span>
+                  <p style="font-size: 10px; text-align: justify;">Service at the top, stage decoration was beyond our expectations. The food are delicious. The team present on site at the top. Smiling, friendly. We recommend them.</p>
+                    <br>
+                  <p style="font-size: 14px;">-Prathik</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+
+                  <p style="font-size: 10px;text-align: justify;">We are so happy & lucky to engage them & never expected their one of the best services with great varieties of menu option & taste of a very high quality & great hospitality for all our guests. I am sure they will be our event organisers for our future functions.</p>
+                  <p  style="font-size: 14px;"><i>-Kayal</i></p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half checked"></span>
+                  <p style="font-size: 10px;text-align: justify;">Before a month of my wedding, I have hired these guys. and they managed everything well on all the things invitations, emails, arrangements for guests and as well kept me stick to the timeline on my wedding day
+                    <br>Thanks to you. </p>
+                    <p style="font-size: 14px;">-Danish</p>
+
+                </div>
+              </div>
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <p style="font-size: 10px;text-align: justify;">It truly makes the event experience from save the dates, invitation, registration website. We also use it for communications pre-event and surveys and post event communications. It is a vital tool in connecting the attendees with the event.</p>
+                  <p  style="font-size: 14px;"><i>-John</i></p>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            
+            <div class="row">
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked "></span>
+                  <p style="font-size: 10px;text-align: justify;">Excellent Services! They were very attentive, excellent adviser and above all reassuring in times of stress. You choose them with your eyes closed! To recommend without hesitation ! Thank you again</p>  
+                  <p style="font-size: 14px;"><i>-Sanvi</i></p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked "></span>
+                  <p style="font-size: 10px;text-align: justify;">The decoration was magical, we had nothing but great praise for the work. We are so happy to have called on them, so grateful that they crossed our path for the most beautiful day of our lives, we will never forget the dream they made us live! </p>
+                  <p style="font-size: 14px;"><i>-Franklin</i></p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star-half checked "></span>
+                  <p style="font-size: 10px;text-align: justify;">I'm totally delighted and under the spell of the decor you created.The Bday cake was amazing. Everything was perfect, subtle, thought out and considered. Thank you again and your kindness.</p>
+                  <br>
+                  <p style="font-size: 14px;"><i>-Wick</i></p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rcontainer">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked "></span>
+                  <p style="font-size: 10px; text-align: justify;">Great professionalism before and after the event. People available and listening to us. A quality service and a decoration in our image and magnificent. Thanks again wedding aaha team for making this day magical!</p>
+                  <br>
+                  <p style="font-size: 14px;"><i>-Richha</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br>
+
+          
+
+<footer>
+  <div class="social-media-icons">
+    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+  </div>
+
+ 
+  <div class="footer-links">
+    <a href="home.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="login.php">Login & Book</a>
+     <a href="admin.php">Admin</a>
+  </div>
+</footer>
+      
+          
+          
+
+</html>

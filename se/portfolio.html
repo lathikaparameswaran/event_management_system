@@ -1,0 +1,232 @@
+<? php ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            event management-Portfolio
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
+
+
+        <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+
+        <style>
+            body{
+                background-image:url("https://www.brides.com/thmb/mM05rrms1vCKNavAr8UGFNZvHMQ=/3279x3279/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__brides__proteus__5bb64a4ab2e7ef506361bb51__11-57fb9d6a4fbb4a43a0cad00bcc7fb6c9.jpeg"); 
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size:cover ;
+                background-position: center;
+               
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            card
+            {
+                background-color: cadetblue;
+            }
+
+            .bcontainer {
+            margin-right: auto;
+            margin-left: auto;
+            width: 520px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+            height: 480px;
+            border-radius: 5px;
+            backdrop-filter: blur(14px);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            
+        }
+
+        .rcontainer {
+            
+            width: 200px;
+            box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+            height: 200px;
+            border-radius: 5px;
+            backdrop-filter: blur(14px);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            
+            
+        }
+
+
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #1abc9c;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fbb03b;
+}
+
+
+.navbar-custom {
+  background-color: #333333; /* Your custom color */
+  
+}
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+              <a class="navbar-brand" href="#"><b><i>Ethereal Events</i></b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="home.html" >Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"  href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="login.php"  >Login & Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="admin.php">Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <br>
+          
+          <div class="bcontainer">
+          <div class="card text-center">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Yes, we are the one...</h5>
+              <p class="card-text">Make your special days the best with us.</p>
+              <img src="https://www.weddingstats.org/wp-content/uploads/2019/11/06-e1572878327320.jpg" class="card-img"   alt="...">
+              <a href="login.php" class="btn btn-secondary">Contact us</a>
+             </div>
+          </div>
+        </div>
+<br><br>
+        <!--team-->
+        <h1 style="color: azure;"><b> OUR TEAM</b></h1>
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="https://i.pinimg.com/736x/3c/ec/ee/3cecee8c303bf0547d69346ca7fdd375.jpg" alt="Jeni" style="width:100%">
+              <div class="container">
+                <h2>Jenifer Kate</h2>
+                <p class="title">Photographer</p>
+                <p style="text-align: justify;">A great photographer knows how to balance artistic integrity with the demands of the client.</p><br>
+                <p>katifer@events.com</p>
+                
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col">
+            <div class="card">
+              <img src="https://thumbs.dreamstime.com/b/operator-consultant-man-icon-design-operator-consultant-man-icon-design-operator-call-center-office-work-man-business-136196772.jpg" alt="Mike" style="width:100%">
+              <div class="container">
+                <h2>Mike Ross</h2>
+                <p class="title">Organizer</p>
+                <p style="text-align: justify;">I lead and take part in the entire event development process, until the event is completed and presented to the client.</p>
+                <p>mike.ross@events.com</p>
+                
+              </div>
+            </div>
+          </div>
+        
+          <div class="col">
+            <div class="card">
+              <img src="https://i.pinimg.com/originals/04/ac/d1/04acd1de051d9039a6b642d233409db7.jpg" alt="Jessy" style="width:100%">
+              <div class="container">
+                <h2>Jessy Lamy</h2>
+                <p class="title">MUA</p>
+                <p style="text-align: justify;">I create unique designs for my clients, requiring them to stay updated on the latest trends in fashion and beauty.</p>
+                <p>jessyy@events.com</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="https://c0.wallpaperflare.com/preview/325/981/320/avatar-people-person-business.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>John Doe</h2>
+                <p class="title">DJ</p>
+                <p style="text-align: justify;">I engage with listeners, queueing up playlists, taking music requests and generating interest in the show</p>
+                <p>doe056@events.com</p>
+                
+              </div>
+            </div>
+          </div>
+
+           
+        </div>
+<br><br>
+
+
+          <footer>
+  <div class="social-media-icons">
+    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+  </div>
+
+ 
+  <div class="footer-links">
+    <a href="home.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="login.php">Login & Book</a>
+     <a href="admin.php">Admin</a>
+  </div>
+</footer>
+      
+
+    </body>
+</html>
